@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Своя игра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Своя игра</h1>
+
+    <div id="player-form">
+      <input type="text" id="playerName" placeholder="Введите имя игрока" />
+      <button onclick="addPlayer()">Добавить игрока</button>
+      <ul id="playerList"></ul>
+    </div>
+
+    <button id="startBtn" onclick="startGame()" disabled>Начать викторину</button>
+
+    <div id="gameBoard" class="hidden game-layout">
+      <div id="playerSidebar" class="player-sidebar">
+        <h3>Игроки</h3>
+        <ul id="playerNames"></ul>
+      </div>
+      <div class="game-main">
+        <div id="categoryReveal" class="category-reveal"></div>
+        <div id="board" class="board hidden"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
